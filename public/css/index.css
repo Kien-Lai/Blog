@@ -28,6 +28,11 @@
     src: url("../font/Roboto-Regular.ttf");
 }
 
+@font-face {
+    font-family: "sub-font";
+    src: url("../font/LobsterTwo-Regular.ttf");
+}
+
 body {
     margin: 0px;
     font-family: 'font';

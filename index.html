@@ -6,36 +6,41 @@
         <link rel="stylesheet" href="./public/css/slide.css">
         <link rel="stylesheet" href="./public/css/video.css">
         <link rel="stylesheet" href="./public/css/index.css">
+        <link rel="stylesheet" href="./public/css/text-color.css">
         
     </head>
     <body>
+
+        <audio autoplay loop>
+            <source src="./public/audio/audio.mp3"> 
+        </audio>
 
         <div id="container">
             <ul id="slides">
                 <li class="slide">
                 <div class="slide-partial slide-left"><img src="https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511755934/left-1_rq3cbf.png"/></div>
                 <div class="slide-partial slide-right"><img src="https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511755934/right-1_vkfzkk.png"/></div>
-                <h1 class="title"><span class="title-text">Young</span></h1>
+                <h1 class="title"><span class="title-text pic1">Our Youth, Our Rain</span></h1>
                 </li>
                 <li class="slide">
                 <div class="slide-partial slide-left"><img src="https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511777361/left-2_ztpypw.png"/></div>
                 <div class="slide-partial slide-right"><img src="https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511777361/right-2_noxc9z.png"/></div>
-                <h1 class="title"><span class="title-text">Mountain</span></h1>
+                <h1 class="title"><span class="title-text pic2">Cool and Cool <3</span></h1>
                 </li>
                 <li class="slide">
                 <div class="slide-partial slide-left"><img src="https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511755933/left-3_ym5x33.jpg"/></div>
                 <div class="slide-partial slide-right"><img src="https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511755934/right-3_ejmfa3.jpg"/></div>
-                <h1 class="title"><span class="title-text">Ocean</span></h1>
+                <h1 class="title"><span class="title-text pic3">Beautiful</span></h1>
                 </li>
                 <li class="slide">
                 <div class="slide-partial slide-left"><img src="https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511767758/left-4_b4m91l.jpg"/></div>
                 <div class="slide-partial slide-right"><img src="https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511767758/right-4_fcbgdh.jpg"/></div>
-                <h1 class="title"><span class="title-text">Canyon</span></h1>
+                <h1 class="title"><span class="title-text pic4">Enthusiasm</span></h1>
                 </li>
                 <li class="slide">
                 <div class="slide-partial slide-left"><img src="https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511767758/left-5_esqeet.jpg"/></div>
                 <div class="slide-partial slide-right"><img src="https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511767759/right-5_sncae7.jpg"/></div>
-                <h1 class="title"><span class="title-text">Risk</span></h1>
+                <h1 class="title"><span class="title-text pic5">Rich</span></h1>
                 </li>
             </ul>
             <ul id="slide-select">
@@ -51,8 +56,17 @@
 
         <div class="buffer" style="width:100vw; height:100vh; opacity: 0"></div>
 
-        <div class="video"></div>
-
+        <div class="video">
+            <div class="icon-audio">
+                <i class="fa fa-volume-up fa-2x" aria-hidden="true" onclick="clickOnSound()"></i>
+                <i class="fa fa-play fa-2x" aria-hidden="true" onclick="clickOnPause()"></i>
+            </div>
+            <div class="video-title"><h1>MV Kỉ Niệm Cuối Cấp 3</h1></div>
+            <div class="embed">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Me-S_tUEpFk?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
         <div class="wrapper">
             <div class="items image luu"></div>
             <div class="items intro luu">
@@ -63,7 +77,9 @@
                     <a href=""><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
                     &nbsp
                     <a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <br><br>
                     <h3>Sđt: 0123456789</h3>
+                    <br>
                     <h3>Trạng thái: Yêu đơn phương Quy</h3>
                 </div>
             </div>
@@ -76,7 +92,9 @@
                     <a href=""><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
                     &nbsp
                     <a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <br><br>
                     <h3>Sđt: 0123456789</h3>
+                    <br>
                     <h3>Trạng thái: Yêu đơn phương Luu</h3>
                 </div>
             </div>
@@ -91,7 +109,9 @@
                     <a href=""><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
                     &nbsp
                     <a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <br><br>
                     <h3>Sđt: 0123456789</h3>
+                    <br>
                     <h3>Trạng thái: Yêu đơn phương Quy</h3>
                 </div>
             </div>
@@ -104,7 +124,9 @@
                     <a href=""><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
                     &nbsp
                     <a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <br><br>
                     <h3>Sđt: 0123456789</h3>
+                    <br>
                     <h3>Trạng thái: Yêu đơn phương Luu</h3>
                 </div>
             </div>
@@ -114,5 +136,6 @@
         <script src="./jquery/jquery-3.2.1.min.js"></script>
         <script src="./public/js/load-animation.js"></script>
         <script src="./public/js/slide.js"></script>
+        <script src="./public/js/audio.js"></script>
     </body>
 </html>
