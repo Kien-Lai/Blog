@@ -1,0 +1,8 @@
+.video {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://res.cloudinary.com/blogkyyeuc1/image/upload/v1511778382/super-hd-wallpaper-for-desktop_wumpyr.jpg");
+    background-size: 100%; 
+    position: relative;
+    z-index: 2;
+}
